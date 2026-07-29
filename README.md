@@ -1,6 +1,9 @@
 # Adaptive CS Tutor
 
-A diagnostic concept-graph tutor for intro CS, built from two of my published
+Adaptive CS Tutor is a diagnostic concept-graph tutor for introductory computer
+science that quizzes a student, marks the concepts they are shaky on, propagates
+that weakness through the prerequisite graph, and explains each concept with
+bilingual retrieval-grounded answers. It is built from two of my published
 SIGCSE TS 2026 papers:
 
 - *Exploring Bilingual Coding for Inclusive CS Learning* — DOI: [10.1145/3770761.3777339](https://doi.org/10.1145/3770761.3777339)
