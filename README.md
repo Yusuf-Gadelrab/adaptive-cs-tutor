@@ -81,3 +81,14 @@ English while explanations flex to the student's language — because the
 original paper found that mixing natural-language scaffolding with
 English-only code identifiers improved comprehension without teaching
 "fake" syntax.
+
+---
+
+## About the author
+
+Built by **Yusuf Gadelrab** — computer science student at San José State University (BS Computer Science, expected May 2028), AI/ML builder, and co-author of two peer-reviewed SIGCSE Technical Symposium 2026 papers on computer science education ([DOI 10.1145/3770761.3777339](https://doi.org/10.1145/3770761.3777339)).
+
+- Portfolio: <https://yusuf-gadelrab.github.io/>
+- About / FAQ: <https://yusuf-gadelrab.github.io/about.html>
+- Guides: <https://yusuf-gadelrab.github.io/guides.html>
+- Contact: yusuf.gadelrab06@gmail.com
