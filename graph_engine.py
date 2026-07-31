@@ -13,7 +13,9 @@ States:
 import json
 import os
 
-GRAPH_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "graph.json")
+HERE = os.path.dirname(os.path.abspath(__file__))
+GRAPH_PATH = os.path.join(HERE, "graph.json")
+QUIZ_PATH = os.path.join(HERE, "quiz.json")
 
 
 def load_graph(path=GRAPH_PATH):
@@ -21,6 +23,11 @@ def load_graph(path=GRAPH_PATH):
         data = json.load(f)
     nodes = {n["id"]: n for n in data["nodes"]}
     return nodes
+
+
+def load_quiz(path=QUIZ_PATH):
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)["questions"]
 
 
 def build_dependents(nodes):
@@ -112,6 +119,59 @@ def prereq_chain(nodes, concept_id):
 
     visit(concept_id)
     return order
+
+
+def learning_path(nodes, dependents, shaky_ids):
+    """
+    The adaptive part: turn a set of shaky concepts into an ORDERED
+    remediation plan.
+
+    Ordering rule, in priority order:
+      1. Shallowest first (fewest prerequisites). You cannot fix a downstream
+         misconception while the thing it rests on is still broken, so the
+         upstream gap must be repaired first.
+      2. Then by blast radius, widest first -- the concept that unblocks the
+         most at-risk downstream material earns the student the most ground.
+      3. Then by id, purely so the output is deterministic and testable.
+
+    Returns a list of dicts:
+      {order, concept, name, depth, unlocks:[ids], unlock_count}
+    where `unlocks` is every at-risk concept downstream of this one.
+    """
+    shaky_ids = set(shaky_ids)
+    for sid in shaky_ids:
+        if sid not in nodes:
+            raise ValueError(f"Unknown concept id in shaky set: '{sid}'")
+
+    levels = topo_levels(nodes)
+
+    def downstream(nid):
+        """All concepts transitively depending on nid."""
+        out, frontier, seen = set(), [nid], {nid}
+        while frontier:
+            cur = frontier.pop()
+            for dep in dependents.get(cur, []):
+                if dep not in seen:
+                    seen.add(dep)
+                    out.add(dep)
+                    frontier.append(dep)
+        return out
+
+    rows = []
+    for sid in shaky_ids:
+        unlocks = sorted(downstream(sid) - shaky_ids)
+        rows.append({
+            "concept": sid,
+            "name": nodes[sid]["name"],
+            "depth": levels[sid],
+            "unlocks": unlocks,
+            "unlock_count": len(unlocks),
+        })
+
+    rows.sort(key=lambda r: (r["depth"], -r["unlock_count"], r["concept"]))
+    for i, row in enumerate(rows, start=1):
+        row["order"] = i
+    return rows
 
 
 def score_quiz(quiz_questions, answers):

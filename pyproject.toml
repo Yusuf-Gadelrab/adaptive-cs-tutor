@@ -1,0 +1,27 @@
+[project]
+name = "adaptive-cs-tutor"
+version = "1.0.0"
+description = "Concept-graph diagnostic tutor for intro CS, with a graph-augmented bilingual RAG explainer running fully offline on a local LLM."
+readme = "README.md"
+requires-python = ">=3.10"
+# Runtime is intentionally ZERO-dependency (Python stdlib only).
+# Nothing here is needed to run the tutor -- only to run the test suite.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+include = ["*.py", "*.json"]

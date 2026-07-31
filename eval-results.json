@@ -1,0 +1,709 @@
+{
+  "model": "qwen3-fast",
+  "host": "http://localhost:11434",
+  "concepts": [
+    "boolean_logic",
+    "conditionals",
+    "loops_for",
+    "functions",
+    "recursion",
+    "lists",
+    "dicts",
+    "complexity",
+    "classes",
+    "inheritance",
+    "sorting",
+    "file_io"
+  ],
+  "runs": [
+    {
+      "kind": "llm",
+      "summary": {
+        "lang": "en",
+        "n": 12,
+        "n_scored_for_grounding": 12,
+        "grounding_rate": 1.0,
+        "leaked_reasoning_count": 0,
+        "sources": {
+          "llm": 12
+        },
+        "latency_s": {
+          "mean": 36.01,
+          "median": 28.42,
+          "min": 5.1,
+          "max": 61.29
+        }
+      },
+      "rows": [
+        {
+          "concept": "boolean_logic",
+          "lang": "en",
+          "source": "llm",
+          "retrieved": [
+            "variables",
+            "operators"
+          ],
+          "n_retrieved": 2,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 311,
+          "elapsed": 5.1
+        },
+        {
+          "concept": "conditionals",
+          "lang": "en",
+          "source": "llm",
+          "retrieved": [
+            "variables",
+            "operators",
+            "boolean_logic"
+          ],
+          "n_retrieved": 3,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 283,
+          "elapsed": 29.27
+        },
+        {
+          "concept": "loops_for",
+          "lang": "en",
+          "source": "llm",
+          "retrieved": [
+            "variables",
+            "operators",
+            "boolean_logic",
+            "conditionals"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 331,
+          "elapsed": 17.75
+        },
+        {
+          "concept": "functions",
+          "lang": "en",
+          "source": "llm",
+          "retrieved": [
+            "variables",
+            "operators",
+            "boolean_logic",
+            "conditionals"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 369,
+          "elapsed": 61.29
+        },
+        {
+          "concept": "recursion",
+          "lang": "en",
+          "source": "llm",
+          "retrieved": [
+            "operators",
+            "boolean_logic",
+            "conditionals",
+            "functions"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 455,
+          "elapsed": 24.28
+        },
+        {
+          "concept": "lists",
+          "lang": "en",
+          "source": "llm",
+          "retrieved": [
+            "variables",
+            "data_types"
+          ],
+          "n_retrieved": 2,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 376,
+          "elapsed": 42.57
+        },
+        {
+          "concept": "dicts",
+          "lang": "en",
+          "source": "llm",
+          "retrieved": [
+            "variables",
+            "data_types",
+            "lists"
+          ],
+          "n_retrieved": 3,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 520,
+          "elapsed": 19.11
+        },
+        {
+          "concept": "complexity",
+          "lang": "en",
+          "source": "llm",
+          "retrieved": [
+            "boolean_logic",
+            "conditionals",
+            "loops_for",
+            "functions"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 498,
+          "elapsed": 60.48
+        },
+        {
+          "concept": "classes",
+          "lang": "en",
+          "source": "llm",
+          "retrieved": [
+            "boolean_logic",
+            "conditionals",
+            "functions",
+            "scope"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 520,
+          "elapsed": 23.8
+        },
+        {
+          "concept": "inheritance",
+          "lang": "en",
+          "source": "llm",
+          "retrieved": [
+            "conditionals",
+            "functions",
+            "scope",
+            "classes"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 460,
+          "elapsed": 60.11
+        },
+        {
+          "concept": "sorting",
+          "lang": "en",
+          "source": "llm",
+          "retrieved": [
+            "operators",
+            "boolean_logic",
+            "conditionals",
+            "loops_for"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 578,
+          "elapsed": 27.57
+        },
+        {
+          "concept": "file_io",
+          "lang": "en",
+          "source": "llm",
+          "retrieved": [
+            "operators",
+            "boolean_logic",
+            "conditionals",
+            "exceptions"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 344,
+          "elapsed": 60.77
+        }
+      ]
+    },
+    {
+      "kind": "llm",
+      "summary": {
+        "lang": "ar",
+        "n": 12,
+        "n_scored_for_grounding": 12,
+        "grounding_rate": 0.833,
+        "leaked_reasoning_count": 0,
+        "sources": {
+          "llm": 12
+        },
+        "latency_s": {
+          "mean": 38.12,
+          "median": 39.09,
+          "min": 18.74,
+          "max": 54.69
+        },
+        "arabic_output_rate": 1.0,
+        "code_identifier_preservation": 1.0
+      },
+      "rows": [
+        {
+          "concept": "boolean_logic",
+          "lang": "ar",
+          "source": "llm",
+          "retrieved": [
+            "variables",
+            "operators"
+          ],
+          "n_retrieved": 2,
+          "grounded": true,
+          "has_arabic": true,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 268,
+          "elapsed": 46.39
+        },
+        {
+          "concept": "conditionals",
+          "lang": "ar",
+          "source": "llm",
+          "retrieved": [
+            "variables",
+            "operators",
+            "boolean_logic"
+          ],
+          "n_retrieved": 3,
+          "grounded": true,
+          "has_arabic": true,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 360,
+          "elapsed": 37.77
+        },
+        {
+          "concept": "loops_for",
+          "lang": "ar",
+          "source": "llm",
+          "retrieved": [
+            "variables",
+            "operators",
+            "boolean_logic",
+            "conditionals"
+          ],
+          "n_retrieved": 4,
+          "grounded": false,
+          "has_arabic": true,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 371,
+          "elapsed": 19.77
+        },
+        {
+          "concept": "functions",
+          "lang": "ar",
+          "source": "llm",
+          "retrieved": [
+            "variables",
+            "operators",
+            "boolean_logic",
+            "conditionals"
+          ],
+          "n_retrieved": 4,
+          "grounded": false,
+          "has_arabic": true,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 290,
+          "elapsed": 53.79
+        },
+        {
+          "concept": "recursion",
+          "lang": "ar",
+          "source": "llm",
+          "retrieved": [
+            "operators",
+            "boolean_logic",
+            "conditionals",
+            "functions"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": true,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 357,
+          "elapsed": 24.55
+        },
+        {
+          "concept": "lists",
+          "lang": "ar",
+          "source": "llm",
+          "retrieved": [
+            "variables",
+            "data_types"
+          ],
+          "n_retrieved": 2,
+          "grounded": true,
+          "has_arabic": true,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 325,
+          "elapsed": 31.45
+        },
+        {
+          "concept": "dicts",
+          "lang": "ar",
+          "source": "llm",
+          "retrieved": [
+            "variables",
+            "data_types",
+            "lists"
+          ],
+          "n_retrieved": 3,
+          "grounded": true,
+          "has_arabic": true,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 484,
+          "elapsed": 36.28
+        },
+        {
+          "concept": "complexity",
+          "lang": "ar",
+          "source": "llm",
+          "retrieved": [
+            "boolean_logic",
+            "conditionals",
+            "loops_for",
+            "functions"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": true,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 440,
+          "elapsed": 54.69
+        },
+        {
+          "concept": "classes",
+          "lang": "ar",
+          "source": "llm",
+          "retrieved": [
+            "boolean_logic",
+            "conditionals",
+            "functions",
+            "scope"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": true,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 486,
+          "elapsed": 18.74
+        },
+        {
+          "concept": "inheritance",
+          "lang": "ar",
+          "source": "llm",
+          "retrieved": [
+            "conditionals",
+            "functions",
+            "scope",
+            "classes"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": true,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 627,
+          "elapsed": 49.02
+        },
+        {
+          "concept": "sorting",
+          "lang": "ar",
+          "source": "llm",
+          "retrieved": [
+            "operators",
+            "boolean_logic",
+            "conditionals",
+            "loops_for"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": true,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 491,
+          "elapsed": 44.53
+        },
+        {
+          "concept": "file_io",
+          "lang": "ar",
+          "source": "llm",
+          "retrieved": [
+            "operators",
+            "boolean_logic",
+            "conditionals",
+            "exceptions"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": true,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 548,
+          "elapsed": 40.42
+        }
+      ]
+    },
+    {
+      "kind": "control_no_llm",
+      "summary": {
+        "lang": "en",
+        "n": 12,
+        "n_scored_for_grounding": 12,
+        "grounding_rate": 0.25,
+        "leaked_reasoning_count": 0,
+        "sources": {
+          "fallback": 12
+        }
+      },
+      "rows": [
+        {
+          "concept": "boolean_logic",
+          "lang": "en",
+          "source": "fallback",
+          "retrieved": [
+            "variables",
+            "operators"
+          ],
+          "n_retrieved": 2,
+          "grounded": false,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 136,
+          "elapsed": 0.0
+        },
+        {
+          "concept": "conditionals",
+          "lang": "en",
+          "source": "fallback",
+          "retrieved": [
+            "variables",
+            "operators",
+            "boolean_logic"
+          ],
+          "n_retrieved": 3,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 128,
+          "elapsed": 0.0
+        },
+        {
+          "concept": "loops_for",
+          "lang": "en",
+          "source": "fallback",
+          "retrieved": [
+            "variables",
+            "operators",
+            "boolean_logic",
+            "conditionals"
+          ],
+          "n_retrieved": 4,
+          "grounded": false,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 134,
+          "elapsed": 0.0
+        },
+        {
+          "concept": "functions",
+          "lang": "en",
+          "source": "fallback",
+          "retrieved": [
+            "variables",
+            "operators",
+            "boolean_logic",
+            "conditionals"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 128,
+          "elapsed": 0.0
+        },
+        {
+          "concept": "recursion",
+          "lang": "en",
+          "source": "fallback",
+          "retrieved": [
+            "operators",
+            "boolean_logic",
+            "conditionals",
+            "functions"
+          ],
+          "n_retrieved": 4,
+          "grounded": false,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 129,
+          "elapsed": 0.0
+        },
+        {
+          "concept": "lists",
+          "lang": "en",
+          "source": "fallback",
+          "retrieved": [
+            "variables",
+            "data_types"
+          ],
+          "n_retrieved": 2,
+          "grounded": false,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 131,
+          "elapsed": 0.0
+        },
+        {
+          "concept": "dicts",
+          "lang": "en",
+          "source": "fallback",
+          "retrieved": [
+            "variables",
+            "data_types",
+            "lists"
+          ],
+          "n_retrieved": 3,
+          "grounded": false,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 120,
+          "elapsed": 0.0
+        },
+        {
+          "concept": "complexity",
+          "lang": "en",
+          "source": "fallback",
+          "retrieved": [
+            "boolean_logic",
+            "conditionals",
+            "loops_for",
+            "functions"
+          ],
+          "n_retrieved": 4,
+          "grounded": true,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 130,
+          "elapsed": 0.0
+        },
+        {
+          "concept": "classes",
+          "lang": "en",
+          "source": "fallback",
+          "retrieved": [
+            "boolean_logic",
+            "conditionals",
+            "functions",
+            "scope"
+          ],
+          "n_retrieved": 4,
+          "grounded": false,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 127,
+          "elapsed": 0.0
+        },
+        {
+          "concept": "inheritance",
+          "lang": "en",
+          "source": "fallback",
+          "retrieved": [
+            "conditionals",
+            "functions",
+            "scope",
+            "classes"
+          ],
+          "n_retrieved": 4,
+          "grounded": false,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 115,
+          "elapsed": 0.0
+        },
+        {
+          "concept": "sorting",
+          "lang": "en",
+          "source": "fallback",
+          "retrieved": [
+            "operators",
+            "boolean_logic",
+            "conditionals",
+            "loops_for"
+          ],
+          "n_retrieved": 4,
+          "grounded": false,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 123,
+          "elapsed": 0.0
+        },
+        {
+          "concept": "file_io",
+          "lang": "en",
+          "source": "fallback",
+          "retrieved": [
+            "operators",
+            "boolean_logic",
+            "conditionals",
+            "exceptions"
+          ],
+          "n_retrieved": 4,
+          "grounded": false,
+          "has_arabic": false,
+          "keeps_code_english": true,
+          "leaked_reasoning": false,
+          "chars": 121,
+          "elapsed": 0.0
+        }
+      ]
+    }
+  ]
+}
