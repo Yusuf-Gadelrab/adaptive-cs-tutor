@@ -23,7 +23,7 @@ This project comes out of two papers accepted to **SIGCSE TS 2026**:
 | Paper | Idea this repo implements |
 |---|---|
 | *Adaptive Curriculum Maps: Graph-Augmented Retrieval-Oriented LLMs for Education* (poster) | Retrieval driven by a prerequisite graph rather than embedding similarity: to teach concept C, retrieve C's prerequisite chain. |
-| *Exploring Bilingual Coding for Inclusive CS Learning* — [10.1145/3770761.3777339](https://doi.org/10.1145/3770761.3777339) | Explanatory prose switches language; code identifiers and keywords stay English. |
+| *Exploring Bilingual Coding for Inclusive Computer Science Learning* — [10.1145/3770761.3777339](https://doi.org/10.1145/3770761.3777339) | Explanatory prose switches language; code identifiers and keywords stay English. |
 
 So the tutor does three things a chatbot does not:
 

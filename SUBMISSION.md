@@ -25,7 +25,7 @@
 I co-authored two papers accepted to **SIGCSE TS 2026**, the ACM computer
 science education conference:
 
-- *Exploring Bilingual Coding for Inclusive CS Learning* — [10.1145/3770761.3777339](https://doi.org/10.1145/3770761.3777339)
+- *Exploring Bilingual Coding for Inclusive Computer Science Learning* — [10.1145/3770761.3777339](https://doi.org/10.1145/3770761.3777339)
 - *Adaptive Curriculum Maps: Graph-Augmented Retrieval-Oriented LLMs for Education* (poster)
 
 Both went through an IRB-approved study in Dr. Ethel Tshukudu's CSEd Research
