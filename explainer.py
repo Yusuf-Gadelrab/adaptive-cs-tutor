@@ -5,12 +5,13 @@ Retrieval is driven by the concept graph rather than by embedding similarity:
 to explain concept C we walk C's prerequisite chain, take the nearest K
 ancestors, and inject *their actual explanation passages* as context. The
 model is therefore forced to build the new idea on top of material the student
-has already been taught -- the "Adaptive Curriculum Maps" idea from
-SIGCSE TS 2026, implemented literally.
+has already been taught -- this project's own graph-augmented retrieval
+design, built specifically for this tutor.
 
-Bilingual mode (SIGCSE TS 2026, "Exploring Bilingual Coding for Inclusive CS
-Learning"): prose switches to Arabic, code identifiers and keywords stay in
-English, because that is what the paper found actually helps learners.
+Bilingual mode (SIGCSE TS 2026, "Exploring Bilingual Coding for Inclusive
+Computer Science Learning"): prose switches to Arabic, code identifiers and
+keywords stay in English, because that is what the paper found actually helps
+learners.
 
 OLLAMA NOTES (hard-won, do not regress):
   * Never shell out to `ollama run` and capture stdout. Always the HTTP API

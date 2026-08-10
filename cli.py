@@ -141,7 +141,7 @@ def cmd_demo(args):
     quiz = ge.load_quiz()
 
     mode = "offline · canned explanations" if args.no_llm else "local qwen3-fast via Ollama HTTP"
-    banner(f"Grounded in SIGCSE TS 2026 research · {mode}")
+    banner(f"Grounded in SIGCSE TS 2026 bilingual-coding research · {mode}")
 
     section("1  DIAGNOSTIC")
     answers = build_answers(quiz, DEMO_WRONG)

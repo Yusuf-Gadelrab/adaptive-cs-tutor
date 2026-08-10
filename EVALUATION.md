@@ -51,8 +51,9 @@ prerequisite the retriever had injected.
 
 **Prerequisite grounding rate** — the share of explanations that name at least
 one of the prerequisite concepts the retriever actually put in the prompt. This
-is the core claim of the Adaptive Curriculum Maps paper: that graph-driven
-retrieval makes explanations build on prior knowledge rather than floating free.
+is the core design goal of this project's own graph-augmented retrieval
+engine: that graph-driven retrieval makes explanations build on prior
+knowledge rather than floating free.
 
 The control run is the important column. The canned fallback passages are good
 CS1 explanations, but they are static text written without any knowledge of a

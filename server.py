@@ -280,7 +280,7 @@ INDEX_HTML = r"""<!doctype html>
       <h1 id="title">Adaptive CS Tutor</h1>
       <span class="house">Dhahab</span>
     </div>
-    <div class="sub" id="subtitle">A concept-graph diagnostic for introductory computer science, built from published SIGCSE TS 2026 research. Runs entirely offline on a local model.</div>
+    <div class="sub" id="subtitle">A concept-graph diagnostic for introductory computer science, built on this project's own graph-augmented retrieval engine and grounded in SIGCSE TS 2026 bilingual-coding research. Runs entirely offline on a local model.</div>
   </div>
   <button id="langToggle" onclick="toggleLang()">العربية</button>
 </header>
@@ -317,7 +317,7 @@ INDEX_HTML = r"""<!doctype html>
   </div>
 </main>
 <footer>
-  <span id="footNote">Grounded in two SIGCSE TS 2026 papers</span> ·
+  <span id="footNote">Grounded in a SIGCSE TS 2026 paper</span> ·
   <a href="https://doi.org/10.1145/3770761.3777339" target="_blank" rel="noopener">10.1145/3770761.3777339</a> ·
   <span id="footStack">100% local inference · zero API cost</span>
 </footer>
@@ -327,7 +327,7 @@ let lang = "en", graphData = null, quizData = null, states = {}, answers = {}, l
 const STR = {
   en: {
     title:"Adaptive CS Tutor",
-    subtitle:"A concept-graph diagnostic for introductory computer science, built from published SIGCSE TS 2026 research. Runs entirely offline on a local model.",
+    subtitle:"A concept-graph diagnostic for introductory computer science, built on this project's own graph-augmented retrieval engine and grounded in SIGCSE TS 2026 bilingual-coding research. Runs entirely offline on a local model.",
     graphHeading:"Concept Graph", legendOk:"Mastered", legendShaky:"Shaky", legendRisk:"At risk",
     legendHint:"Click any node to be taught it",
     pathHeading:"Your Learning Path",
@@ -339,11 +339,11 @@ const STR = {
     builtOn:"Built on", unblocks:"unblocks", depth:"depth", downstream:"downstream concepts",
     srcLlm:"local qwen3-fast", srcCache:"local qwen3-fast · cached", srcFallback:"offline passage",
     chkGrounded:"builds on a retrieved prerequisite", chkCode:"code identifiers stayed English",
-    footNote:"Grounded in two SIGCSE TS 2026 papers", footStack:"100% local inference · zero API cost"
+    footNote:"Grounded in a SIGCSE TS 2026 paper", footStack:"100% local inference · zero API cost"
   },
   ar: {
     title:"المدرّس التكيّفي لعلوم الحاسب",
-    subtitle:"تشخيص قائم على خريطة المفاهيم لمقررات علوم الحاسب التمهيدية، مبني على أبحاث منشورة في SIGCSE TS 2026. يعمل بالكامل دون اتصال بالإنترنت على نموذج محلي.",
+    subtitle:"تشخيص قائم على خريطة المفاهيم لمقررات علوم الحاسب التمهيدية، مبني على محرّك استرجاع قائم على الرسم البياني من تصميم هذا المشروع، ومستند إلى أبحاث الترميز ثنائي اللغة في SIGCSE TS 2026. يعمل بالكامل دون اتصال بالإنترنت على نموذج محلي.",
     graphHeading:"خريطة المفاهيم", legendOk:"متقن", legendShaky:"غير مستقر", legendRisk:"معرّض للخطر",
     legendHint:"اضغط على أي عقدة ليتم شرحها",
     pathHeading:"مسار التعلّم الخاص بك",
@@ -355,7 +355,7 @@ const STR = {
     builtOn:"مبني على", unblocks:"يفتح", depth:"العمق", downstream:"مفاهيم لاحقة",
     srcLlm:"qwen3-fast محلي", srcCache:"qwen3-fast محلي · مخزّن", srcFallback:"شرح جاهز دون اتصال",
     chkGrounded:"مبني على متطلب سابق تم استرجاعه", chkCode:"أسماء الكود بقيت بالإنجليزية",
-    footNote:"مبني على ورقتين بحثيتين في SIGCSE TS 2026", footStack:"استدلال محلي بالكامل · بدون أي تكلفة"
+    footNote:"مبني على ورقة بحثية في SIGCSE TS 2026", footStack:"استدلال محلي بالكامل · بدون أي تكلفة"
   }
 };
 

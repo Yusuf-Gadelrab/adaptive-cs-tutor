@@ -18,12 +18,13 @@ Most tutoring tools answer the question a student asks. That is usually the
 wrong question — a student stuck on recursion is often really stuck on
 conditionals, three concepts upstream, and neither of you knows it.
 
-This project comes out of two papers accepted to **SIGCSE TS 2026**:
+The bilingual half of this project comes out of a peer-reviewed paper accepted
+to **SIGCSE TS 2026**, which I co-authored (7th of 8 authors):
 
-| Paper | Idea this repo implements |
+| Source | Idea this repo implements |
 |---|---|
-| *Adaptive Curriculum Maps: Graph-Augmented Retrieval-Oriented LLMs for Education* (poster) | Retrieval driven by a prerequisite graph rather than embedding similarity: to teach concept C, retrieve C's prerequisite chain. |
 | *Exploring Bilingual Coding for Inclusive Computer Science Learning* — [10.1145/3770761.3777339](https://doi.org/10.1145/3770761.3777339) | Explanatory prose switches language; code identifiers and keywords stay English. |
+| My own design for this repo | Retrieval driven by a prerequisite graph rather than embedding similarity: to teach concept C, retrieve C's prerequisite chain. |
 
 So the tutor does three things a chatbot does not:
 
@@ -239,8 +240,8 @@ result.
 ## About the author
 
 Built by **Yusuf Gadelrab** — computer science student at San José State
-University (BS Computer Science, expected May 2028) and co-author of two
-peer-reviewed SIGCSE Technical Symposium 2026 papers on computer science
+University (BS Computer Science, expected May 2028) and co-author (7th of 8) on
+a peer-reviewed SIGCSE Technical Symposium 2026 paper on computer science
 education, written in Dr. Ethel Tshukudu's CSEd Research Lab at SJSU.
 
 - Portfolio: <https://yusuf-gadelrab.github.io/>

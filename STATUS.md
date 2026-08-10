@@ -1,5 +1,7 @@
 # Status — Adaptive CS Tutor / SIGCSE SRC rescue
 
+> **Corrected 2026-08-10:** an earlier version of this file treated "Adaptive Curriculum Maps: Graph-Augmented Retrieval-Oriented LLMs for Education" as an accepted poster by this author. That is refuted — the poster is registered to four other authors. This project has exactly one associated peer-reviewed publication, the bilingual-coding paper (DOI 10.1145/3770761.3777339). The graph-augmented retrieval design in this repo is original work built here.
+
 Written 2026-07-31 after re-verifying deadline, running the real test suite,
 and reconciling four look-alike codebases. Every number below came from a
 command I ran and can be reproduced; nothing is estimated.
@@ -19,9 +21,7 @@ is stale:
 | SIGCSE TS 2026 conference itself | **Feb 18–21, 2026, St. Louis, MO** — already held |
 
 Today is 2026-07-31. That deadline was ~10 months ago and the conference was
-~5 months ago. **There is no live TS2026 SRC to submit to.** This is also
-consistent with Yusuf already being a co-author on the accepted TS2026
-poster — that track already concluded.
+~5 months ago. **There is no live TS2026 SRC to submit to.**
 
 **The real, still-open target is SIGCSE TS 2027 SRC:**
 
@@ -41,8 +41,9 @@ does not change year to year):**
   References. ACM SIG Conference 2-column template, US letter.
 - All authors need ORCID iDs and active ACM Student Membership numbers.
 - Faculty supervisor details + proof of current enrollment.
-- Category: Undergraduate or Graduate (mutually exclusive with Posters track
-  — can't submit the identical work to both).
+- Category: Undergraduate or Graduate (mutually exclusive with the
+  conference's separate track for already-published work — can't submit the
+  identical work to both).
 - Submission via EasyChair (2026 link was
   `https://easychair.org/conferences/?conf=sigcsets2026`; the 2027 equivalent
   will post on `https://2027.sigcse-ts.acm.org/` closer to the deadline — not
@@ -152,30 +153,35 @@ I started it manually).
 
 ---
 
-## 5. Is the SRC submission the poster, or something else?
+## 5. What does the SRC submission build on?
 
-**Distinct artifact, not the same work — three-way split:**
+**Two-way split, not the same work:**
 
-1. **The accepted poster** ("Adaptive Curriculum Maps: Graph-Augmented
-   Retrieval-Oriented LLMs for Education") — already written, already
-   accepted, already presented at TS2026 (Feb 2026). Done, closed.
-2. **This software** (`adaptive-cs-tutor`) — a working implementation of the
-   poster's idea (graph-driven retrieval instead of embeddings) plus a
-   measurement harness. Real, tested, working. But its own submission
-   document is a Devpost hackathon writeup for a *different* competition
-   (Prometheus July AI Challenge), not an SRC abstract.
-3. **An SRC extended abstract** — **does not exist yet, anywhere, in any of
-   the four codebases checked.** Nothing on disk is in ACM 2-page format
-   with the required section headers.
+1. **The bilingual-coding paper** ("Exploring Bilingual Coding for Inclusive
+   Computer Science Learning", SIGCSE TS 2026, DOI
+   10.1145/3770761.3777339) — already written, already accepted, already
+   published; Yusuf is co-author 7 of 8. Done, closed. Its finding (switch
+   the prose to Arabic, keep code identifiers in English) is what this
+   repo's bilingual mode implements.
+2. **This software** (`adaptive-cs-tutor`) — an original graph-augmented
+   retrieval engine and measurement harness, designed and built for this
+   project rather than proposed in any paper. Real, tested, working. But its
+   own submission document is a Devpost hackathon writeup for a *different*
+   competition (Prometheus July AI Challenge), not an SRC abstract.
 
-The legitimate framing for a TS2027 SRC entry would be: the poster
-*proposed* graph-augmented retrieval; this repo is the *first empirical
-implementation and evaluation* of it, with a measured grounding-rate result
-(1.000 vs. 0.250 control) that didn't exist when the poster was written. That
-is a defensible "distinct research contribution," but reusing an idea from an
-already-presented poster for a new SRC entry has a novelty/research-integrity
-angle only your advisor (Dr. Tshukudu) can actually clear — flag it to her
-before writing, not after.
+**An SRC extended abstract does not exist yet, anywhere, in any of the four
+codebases checked.** Nothing on disk is in ACM 2-page format with the
+required section headers.
+
+The legitimate framing for a TS2027 SRC entry is straightforward: this repo
+is an original empirical system — graph-driven retrieval over a concept
+graph, measured against a grounding-rate metric (1.000 vs. 0.250 control) —
+that also implements the bilingual-coding paper's prose-switching finding.
+No prior accepted work of this author's is being extended or reused, so
+there is no novelty/research-integrity question to clear here — a routine
+advisor
+sign-off from Dr. Tshukudu before submitting is still worth getting, same as
+any submission.
 
 ---
 
@@ -183,8 +189,8 @@ before writing, not after.
 
 | # | Task | Est. time | Notes |
 |---|---|---|---|
-| 1 | Confirm with Dr. Tshukudu that extending the already-presented poster into a new SRC entry is acceptable/advisable | 1 email + her turnaround | Do this first — gates everything else |
-| 2 | Write the 2-page ACM-format extended abstract (250-word abstract, Problem/Motivation, Background/Related Work, Approach/Uniqueness, Results/Contributions, References) | 4–6 hrs | Content exists (README, EVALUATION.md, the two papers) — this is compression + reformatting + a related-work paragraph, not new research |
+| 1 | Confirm with Dr. Tshukudu that this repo's own empirical work is sufficient, novel content for a TS2027 SRC entry | 1 email + her turnaround | Do this first — gates everything else |
+| 2 | Write the 2-page ACM-format extended abstract (250-word abstract, Problem/Motivation, Background/Related Work, Approach/Uniqueness, Results/Contributions, References) | 4–6 hrs | Content exists (README, EVALUATION.md, the bilingual-coding paper) — this is compression + reformatting + a related-work paragraph, not new research |
 | 3 | Get/confirm ORCID iDs for all authors | ~15 min if none exist | Free, instant |
 | 4 | Get/confirm active ACM Student Membership for all authors | ~20 min + ACM's small student fee | Needed for eligibility |
 | 5 | Get faculty supervisor sign-off + enrollment verification | Depends on advisor availability | Bundle with item 1 |

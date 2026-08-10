@@ -16,20 +16,19 @@
 
 > Alternates, if a shorter field is needed:
 > - A concept-graph tutor that finds the gap under the gap — offline, bilingual, $0.
-> - Published SIGCSE research, turned into a tutor that runs on your laptop with the Wi-Fi off.
+> - Published SIGCSE research, built into a tutor that runs on your laptop with the Wi-Fi off.
 
 ---
 
 ## Inspiration
 
-I co-authored two papers accepted to **SIGCSE TS 2026**, the ACM computer
-science education conference:
+I'm a co-author (7th of 8) on a paper accepted to **SIGCSE TS 2026**, the ACM
+computer science education conference:
 
 - *Exploring Bilingual Coding for Inclusive Computer Science Learning* — [10.1145/3770761.3777339](https://doi.org/10.1145/3770761.3777339)
-- *Adaptive Curriculum Maps: Graph-Augmented Retrieval-Oriented LLMs for Education* (poster)
 
-Both went through an IRB-approved study in Dr. Ethel Tshukudu's CSEd Research
-Lab at SJSU. And then they did what papers do: they became PDFs.
+It came out of an IRB-approved, 60-participant study in Dr. Ethel Tshukudu's
+CSEd Research Lab at SJSU. And then it did what papers do: it became a PDF.
 
 Meanwhile I tutor CS1 students at SJSU, and I kept watching the same thing
 happen. A student says "I don't get recursion." You explain recursion. It
@@ -40,7 +39,8 @@ Every AI tutor I've used makes this worse, not better. Ask about recursion, get
 a great paragraph about recursion, stay exactly as stuck. The model answers the
 question you asked, which is precisely the thing a good tutor refuses to do.
 
-So I built the thing the papers describe.
+So I built the tutor I wanted: the paper's bilingual finding, wired into a
+prerequisite-graph engine I designed myself.
 
 ## What it does
 
@@ -89,8 +89,8 @@ shaky nodes to find at-risk ones.
 store. The prerequisite graph *is* the retriever: to explain concept C, walk C's
 ancestor chain root-first and take the nearest four — the material most recently
 taught — then inject those concepts' actual explanation passages as context.
-It's RAG where the index is a curriculum, which is the whole idea of the
-Adaptive Curriculum Maps paper.
+It's RAG where the index is a curriculum, which is the whole idea this project
+was built to test.
 
 **Sequencing** sorts shaky concepts by depth ascending, then blast radius
 descending, then id for determinism.
@@ -139,8 +139,9 @@ diagnosis better.
 
 ## Accomplishments I'm proud of
 
-- **Peer-reviewed research that actually runs.** Two SIGCSE TS 2026 papers,
-  implemented as working software, cited by DOI, in a repo you can clone.
+- **Peer-reviewed research that actually runs.** A SIGCSE TS 2026 paper's
+  bilingual finding, implemented as working software, cited by DOI, in a repo
+  you can clone.
 - **Zero dependencies and zero cost.** Whole runtime is Python stdlib. Whole
   inference bill is $0, forever, for anyone — which matters, because the
   students this is for are exactly the ones who can't expense an API key.
@@ -226,9 +227,10 @@ scrolling.
 **SHOT:** Cut to the browser. Concept graph, all nodes green. Slow scroll so the
 whole DAG reads.
 
-> "This is Adaptive CS Tutor. It's built from two papers I co-authored that were
-> accepted to SIGCSE 2026 — the ACM computer science education conference. Every
-> concept in intro CS, wired to its prerequisites."
+> "This is Adaptive CS Tutor. The bilingual half comes from a paper I co-authored
+> that was accepted to SIGCSE 2026 — the ACM computer science education
+> conference. The graph engine is mine. Every concept in intro CS, wired to its
+> prerequisites."
 
 ---
 
