@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use Adaptive CS Tutor in academic work, please cite it using the metadata below."
+title: "Adaptive CS Tutor"
+type: software
+authors:
+  - family-names: Gadelrab
+    given-names: Yusuf
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/Yusuf-Gadelrab/adaptive-cs-tutor"
+url: "https://github.com/Yusuf-Gadelrab/adaptive-cs-tutor"
+abstract: "Prototype concept-graph diagnostic tutor for introductory computer science with graph-based prerequisite retrieval and bilingual English/Arabic explanations."
+keywords:
+  - computer science education
+  - adaptive learning
+  - curriculum graph
+  - retrieval-augmented generation
+  - bilingual education
+references:
+  - type: conference-paper
+    authors:
+      - family-names: Tshukudu
+        given-names: Ethel
+      - family-names: Shah
+        given-names: Neel Asheshbhai
+      - family-names: Kieu
+        given-names: Thien Khang
+      - family-names: Deeb
+        given-names: Leqaa
+      - family-names: Venkateswaran
+        given-names: Harshitha
+      - family-names: Ghai
+        given-names: Aarav
+      - family-names: Gadelrab
+        given-names: Yusuf
+      - family-names: Hada
+        given-names: Purujit
+    title: "Exploring Bilingual Coding for Inclusive Computer Science Learning"
+    conference:
+      name: "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2"
+    year: 2026
+    doi: "10.1145/3770761.3777339"
+    url: "https://doi.org/10.1145/3770761.3777339"
+  - type: website
+    authors:
+      - name: "SIGCSE TS 2026"
+    title: "Adaptive Curriculum Maps: Graph Augmented Retrieval Oriented LLM’s for Education (Poster)"
+    year: 2026
+    url: "https://sigcse2026.sigcse.org/details/sigcse-ts-2026-posters/181/Adaptive-Curriculum-Maps-Graph-Augmented-Retrieval-Oriented-LLM-s-for-Education"
