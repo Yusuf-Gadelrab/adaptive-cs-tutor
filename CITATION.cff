@@ -17,33 +17,8 @@ keywords:
   - retrieval-augmented generation
   - bilingual education
 references:
-  - type: conference-paper
-    authors:
-      - family-names: Tshukudu
-        given-names: Ethel
-      - family-names: Shah
-        given-names: Neel Asheshbhai
-      - family-names: Kieu
-        given-names: Thien Khang
-      - family-names: Deeb
-        given-names: Leqaa
-      - family-names: Venkateswaran
-        given-names: Harshitha
-      - family-names: Ghai
-        given-names: Aarav
-      - family-names: Gadelrab
-        given-names: Yusuf
-      - family-names: Hada
-        given-names: Purujit
+  - type: generic
     title: "Exploring Bilingual Coding for Inclusive Computer Science Learning"
-    conference:
-      name: "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2"
     year: 2026
     doi: "10.1145/3770761.3777339"
     url: "https://doi.org/10.1145/3770761.3777339"
-  - type: website
-    authors:
-      - name: "SIGCSE TS 2026"
-    title: "Adaptive Curriculum Maps: Graph Augmented Retrieval Oriented LLM’s for Education (Poster)"
-    year: 2026
-    url: "https://sigcse2026.sigcse.org/details/sigcse-ts-2026-posters/181/Adaptive-Curriculum-Maps-Graph-Augmented-Retrieval-Oriented-LLM-s-for-Education"

@@ -1,6 +1,6 @@
 # Adaptive CS Tutor
 
-**Adaptive CS Tutor is a prototype concept-graph tutor for introductory computer science, related to the SIGCSE TS 2026 [poster, *Adaptive Curriculum Maps: Graph Augmented Retrieval Oriented LLM’s for Education*](https://sigcse2026.sigcse.org/details/sigcse-ts-2026-posters/181/Adaptive-Curriculum-Maps-Graph-Augmented-Retrieval-Oriented-LLM-s-for-Education).**
+**Adaptive CS Tutor is an independent prototype concept-graph tutor for introductory computer science.**
 
 It uses a short diagnostic to identify shaky CS1 concepts, propagates prerequisite risk through a hand-authored curriculum graph, and generates English or Arabic explanations that retrieve relevant prerequisites first. It is a research/software **prototype**: it has not been evaluated in a classroom or used to establish learning-outcome claims.
 
@@ -124,12 +124,12 @@ A wrong answer identifies the concept tested by that item as shaky. The graph th
 - The included Arabic material is not presented as instructor-reviewed pedagogical content.
 - The implementation has not been trialed with students; do not infer learning outcomes from its automated tests or evaluation harness.
 
-## Related SIGCSE work
+## SIGCSE 2026 contributions by Yusuf Gadelrab
 
-- **Poster (not a paper):** [*Adaptive Curriculum Maps: Graph Augmented Retrieval Oriented LLM’s for Education* — SIGCSE TS 2026 Posters](https://sigcse2026.sigcse.org/details/sigcse-ts-2026-posters/181/Adaptive-Curriculum-Maps-Graph-Augmented-Retrieval-Oriented-LLM-s-for-Education).
-- **Related full paper:** Ethel Tshukudu, Neel Asheshbhai Shah, Thien Khang Kieu, Leqaa Deeb, Harshitha Venkateswaran, Aarav Ghai, Yusuf Gadelrab, and Purujit Hada. *Exploring Bilingual Coding for Inclusive Computer Science Learning.* Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2 (2026). [https://doi.org/10.1145/3770761.3777339](https://doi.org/10.1145/3770761.3777339)
+- **Peer-reviewed poster:** *Exploring Bilingual Coding for Inclusive Computer Science Learning.* ACM SIGCSE Technical Symposium 2026, Proceedings V.2, pp. 1559–1560. DOI: [10.1145/3770761.3777339](https://doi.org/10.1145/3770761.3777339). Yusuf Gadelrab is listed seventh in the author order.
+- **Accepted CER-track paper:** Ethel Tshukudu, Thien Khang Kieu, Leqaa Deeb, Harshitha Venkateswaran, and Yusuf Gadelrab. *Does Language Matter in Programming? Exploring Student Attitudes and Experiences in a Bilingual Coding Workshop.* SIGCSE Virtual 2026. Yusuf Gadelrab is fifth of five authors. [Official listing](https://sigcsevirtual2026.acm.org/details/sigcse-virtual-2026-papers/31/Does-Language-Matter-in-Programming-Exploring-Student-Attitudes-and-Experiences-in-a)
 
-The full paper is related research on bilingual coding. This repository is a separate software prototype and should not be represented as a classroom evaluation or as the poster itself.
+This repository is a separate software prototype and should not be represented as a classroom evaluation or as either SIGCSE contribution.
 
 ## Citation
 
@@ -140,10 +140,10 @@ Gadelrab, Yusuf. (2026). Adaptive CS Tutor (Version 1.0.0) [Computer software].
 https://github.com/Yusuf-Gadelrab/adaptive-cs-tutor
 ```
 
-When referring to the related SIGCSE work, cite it according to the item type:
+When referring to Yusuf Gadelrab’s SIGCSE contributions, preserve their item types and author positions:
 
-- *Adaptive Curriculum Maps: Graph Augmented Retrieval Oriented LLM’s for Education.* (2026). **Poster**, SIGCSE TS 2026. <https://sigcse2026.sigcse.org/details/sigcse-ts-2026-posters/181/Adaptive-Curriculum-Maps-Graph-Augmented-Retrieval-Oriented-LLM-s-for-Education>
-- Tshukudu, E., Shah, N. A., Kieu, T. K., Deeb, L., Venkateswaran, H., Ghai, A., Gadelrab, Y., & Hada, P. (2026). *Exploring Bilingual Coding for Inclusive Computer Science Learning.* Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2. https://doi.org/10.1145/3770761.3777339
+- *Exploring Bilingual Coding for Inclusive Computer Science Learning.* (2026). **Peer-reviewed poster**, SIGCSE Technical Symposium 2026, Proceedings V.2, pp. 1559–1560. DOI: https://doi.org/10.1145/3770761.3777339. Yusuf Gadelrab is listed seventh in the author order.
+- Tshukudu, E., Kieu, T. K., Deeb, L., Venkateswaran, H., & Gadelrab, Y. (2026). *Does Language Matter in Programming? Exploring Student Attitudes and Experiences in a Bilingual Coding Workshop.* **Accepted CER-track paper**, SIGCSE Virtual 2026. Yusuf Gadelrab is fifth of five authors. https://sigcsevirtual2026.acm.org/details/sigcse-virtual-2026-papers/31/Does-Language-Matter-in-Programming-Exploring-Student-Attitudes-and-Experiences-in-a
 
 ## License
 
